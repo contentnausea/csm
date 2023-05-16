@@ -1,0 +1,352 @@
+/*
+Theme Name: Mines Library
+Description: A Divi child theme for the Mines Library website
+Author: Mines
+Author URI: https://www.elegantthemes.com/gallery/divi/
+Template: Divi
+Version: 1.0.0
+Text Domain: mineslibrary
+*/
+/*  Break Points
+@media only screen and (max-width: 980px)
+@media only screen and (max-width: 767px)
+*/
+/* --- Custom CSS Below --- */
+/*** TYPOGRAPHY ***/
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+}
+
+/* Links */
+#main-content p a {
+  text-decoration: underline;
+}
+
+.entry-content li a {
+  text-decoration: underline;
+}
+
+/* Page Titles */
+.entry-title {
+  text-align: center;
+}
+
+.entry-title::after {
+  display: block;
+  content: "";
+  background-color: #d2492a;
+  height: 2px;
+  width: 10%;
+  margin: .5em auto;
+}
+
+.page-title {
+  color: #ffffff;
+  text-align: center;
+}
+
+/*Help icons - override inline styles*/
+.help-box {
+  color: #ffffff;
+}
+
+/* Hours and Global Links */
+.sub-nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border-top: 2px solid #D2492A;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.824em;
+  color: #000000;
+  line-height: 2;
+  padding: 10px;
+}
+
+.sub-nav-grid a {
+  color: #000000;
+}
+
+/* Hours */
+.header-hours {
+  text-align: left;
+}
+
+.header-links {
+  text-align: left;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 619px) {
+  .header-links {
+    text-align: right;
+    padding-right: 30px;
+  }
+}
+
+/* LibCal - Today's Hours */
+#api_hours_today_iid1725_lid6298 {
+  display: inline-flex;
+}
+
+.hours-col-loc, .dep8778, .dep8784, .dep8786, .dep8787 {
+  display: none;
+}
+
+.hours-col-time {
+  padding: 0px;
+}
+
+.hours-today {
+  border: none;
+}
+
+.hours-col-time {
+  border-top: none;
+}
+
+.hours-today-row {
+  vertical-align: baseline;
+}
+
+/* System Message */
+#system-msg-container {
+  color: #ffffff;
+  font-weight: 600;
+  background: #21314d;
+  padding: 0;
+}
+
+#system-msg-container a {
+  color: #ffffff;
+}
+
+.system-msg-row {
+  padding: 10px 0 !important;
+  font-size: 90%;
+}
+
+.system-msg-row p {
+  text-align: center;
+}
+
+/* -- Search Tabs -- */
+#search-boxes .et_pb_tabs_0.et_pb_tabs .et_pb_all_tabs {
+  background-color: #e6e6e6;
+}
+
+.et_pb_tabs_controls li {
+  min-height: 50px;
+  background: #bfc0bf;
+  border-right: 1px solid #f2f2f2;
+}
+
+.et_pb_tab_active a, .et_pb_tabs_controls li a {
+  color: #21314D;
+}
+
+.et_pb_tabs_controls li.et_pb_tab_active {
+  background: #21314D;
+}
+
+.et_pb_tab_active a {
+  color: #ffffff !important;
+}
+
+.equal-tabs .et_pb_tabs_controls li {
+  width: 20%;
+  /*change width of tabs here depending on the number of tabs you have*/
+  text-align: center;
+}
+
+@media screen and (max-width: 970px) {
+
+  /*change device breakpoint here depending on the number of tabs you have*/
+  .equal-tabs .et_pb_tabs_controls li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+/* Search boxes - flexbox */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.select-box {
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  font-size: 1em;
+  margin-right: 5px
+}
+
+.search-box {
+  box-sizing: border-box;
+  width: 90%;
+  flex: 2 0 200px;
+  background: #E9E9E9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  line-height: normal;
+  min-height: 50px;
+}
+
+.search-btn {
+  box-sizing: border-box;
+  flex: 0 0 90px;
+  background: #21314d;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0.35em 0.75em;
+  border: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 50px;
+}
+
+.search-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-links a {
+  color: #000000;
+}
+
+/* Media queries for search forms */
+@media all and (max-width: 577px) {
+  .select-box {
+    flex: 1 0 200px;
+    margin-right: 0;
+  }
+}
+
+@media all and (min-width: 460px) {
+  .search-btn {
+    margin-left: 5px;
+  }
+}
+
+@media all and (max-width: 449px) {
+  .search-btn {
+    margin-top: 10px;
+  }
+
+  .select-box {
+    margin-bottom: 5px;
+  }
+}
+
+/*** PORTFOLIO STAFF ***/
+.post-meta {
+  line-height: 1.2em;
+}
+
+#faculty-staff img {
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+}
+
+#post-1790 h2 {
+  color: #21314d;
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 22.1px;
+}
+
+#post-1790 h4 {
+  color: #21314d;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 23.4px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  padding-bottom: 0 !important;
+}
+
+#post-1790 .dp-custom-field-value {
+  color: #333333;
+  font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.5px;
+  word-wrap: break-word;
+}
+
+#post-1790 p {
+  color: #333333;
+  font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.5px;
+  word-wrap: break-word;
+  padding-bottom: 0 !important;
+  margin-bottom: .5em;
+}
+
+/* Suggest a Purchase Form + media queries for iframe*/
+.suggest-iframe {
+  width: 100%;
+  height: 2200px;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1159px) {
+  .suggest-iframe {
+    height: 1800px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .suggest-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .suggest-iframe {
+    height: 1500px;
+  }
+}
+
+/* Focus States */
+a:focus {
+  outline: 1px dotted #000000;
+}
+
+#main-footer a:focus, #top-header a:focus {
+  outline: 2px solid #109cde;
+}
+
+/* Hover States */
+.sub-nav-grid a:hover {
+  text-decoration: underline;
+}
+
+/** IE **/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  /* Sub-nav */
+  .sub-nav-grid {
+    display: block;
+  }
+
+  .header-hours {
+    float: left;
+  }
+
+  /* LibCal - Today's Hours*/
+  #api_hours_today_iid1725_lid6298 {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}

@@ -1,0 +1,25 @@
+/*
+   Header custom styles
+*/
+/* Fix z-index to display Skiplinks*/
+#top-header {
+  z-index: 99999;
+}
+
+/* -- Logo fixes --*/
+#logo {
+  max-height: 70px !important;
+  transform: none;
+}
+
+@media only screen and (max-width: 414px) {
+  #logo {
+    max-width: 70% !important;
+  }
+}
+
+/* NAVIGATION */
+@media only screen and (max-width: 1170px) {
+  #et_mobile_nav_menu {
+    display: none;
+  }

@@ -1,0 +1,120 @@
+/* --- Primo - 1295 --- */
+
+<div style="align: left; margin: 0px; border: 1px solid #92A2BD; background: #CED5DD; padding: 20px 20px; -webkit-border-radius: 12px; -moz-border-radius: 12px; border-radius: 12px; margin-bottom:-10px;">
+<h3 style="color: #425262; margin-top:10px;">Search the Library Catalog</h3>
+<!--Customized and added select box by Andy Tang at 12/12/2017-->
+ <!--<select name="search_field" id="andyselect" style="vertical-align:text-top; font-size:93%;" title="Search within" size="7">-->
+<!-- <select id="searchOptions" style="color: #425262; margin-left: 10px;"> --> 
+<!--  <select name="search_field" id="andyselect" title="Search within" > -->
+ <!-- <option selected="selected" value="any">Keyword</option> -->
+ <!-- <option value="title">Title</option> -->
+ <!-- <option value="creator">Author</option> -->
+ <!-- </select> -->
+<form id="simple" name="searchForm" method="get" target="_self" action="https://mines.primo.exlibrisgroup.com/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()"  style="display:flex; align-items: baseline;padding-left:0px;margin-bottom:-20px;">
+ <!-- Customizable Parameters -->
+<input name="institution" type="hidden" value="01COLSCHL_INST">
+<input name="vid" type="hidden" value="01COLSCHL_INST:MINES">
+<input name="tab" type="hidden" value="Everything">
+<input name="search_scope" type="hidden" value="MyInst_and_CI">
+<input name="mode" type="hidden" value="Basic">
+ <!-- Fixed parameters -->
+<input name="displayMode" type="hidden" value="full">
+<input name="bulkSize" type="hidden" value="10">
+<input name="highlight" type="hidden" value="true">
+<input name="dum" type="hidden" value="true">
+<input id="primoQuery" name="query" type="hidden">
+<input name="displayField" type="hidden" value="all">
+<!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
+<input type="hidden" name="pcAvailabiltyMode" value="true">
+<input type="text" id="primoQueryTemp" value="" size="400" style="display:flex; flex-grow:1; min-height: 50px; margin-bottom:20px !important; width:90%;" placeholder="Find books, articles, maps, and more">
+<!-- Search Button -->
+<input id="go" title="Search" onclick="searchPrimo()" type="submit" value="Search" alt="Search" style="height: 40px; font-size: 14px; font-weight: bold; background: #D2492A; display:flex; flex-grow:0; min-height: 50px; margin-left: 5px;">
+</form>
+
+<!-- Search Links at the bottom of the search box -->
+<p style="text-align: center; margin-top:10px; margin-bottom: 22px;"><i class="fa fa-search-plus"></i>
+ <a href="https://mines.primo.exlibrisgroup.com/discovery/search?vid=01COLSCHL_INST:MINES&mode=advanced&tab=Everything&lang=en&sortby=rank">
+<strong>Advanced Search</strong></a> | <a href="https://library.mines.edu/ill"><strong>Can't Find It?</strong></a></p>
+<!-- End div -->
+</div>
+
+/* --- Browzine - 1189 --- */
+
+<div style="margin: 0px;border: 1px solid #92A2BD;background: #CED5DD;padding: 10px 20px">
+<h3 style="text-transform:none; margin-top: 10px; margin-bottom: 20px;">SEARCH eJOURNALS</h3>
+
+<div class="row">
+<form method="get" action="https://api.thirdiron.com/v2/libraries/1252/external-search" style="padding: 20px 0;margin-top: -30px;margin-bottom: 0px">
+  <fieldset>
+    <p style="display:flex;">
+    <input type="text" name="query" placeholder="FIND SCHOLARLY AND POPULAR JOURNALS AND ARTICLES BY TITLE OR SUBJECT" style="display:flex; flex-grow:1; min-height: 50px;" id="query" required>
+    <input type="submit" value="Search" style="display:flex; flex-grow:0; min-height: 50px; margin-left: 5px;">
+    </p>
+   </fieldset>
+</form>
+</div>
+
+<div style="text-align:center; text-decoration:underline;"><a href="https://browzine.com/libraries/1252/subjects">Browse all eJournals</a></div>
+
+</div>
+
+/* --- A-Z List (LibGuides) - 1188 ---*/
+
+<div style="margin: 0px;border: 1px solid #92A2BD;background: #CED5DD;padding: 10px 20px;padding-bottom:0px;margin-top: 20px;"><!-- [et_pb_line_break_holder] --><h3 style="margin-top:-20px;">Search Databases</h3><!-- [et_pb_line_break_holder] --><form role="search" method="GET" action="//libguides.mines.edu/az.php" target="_blank" style="display:flex;margin-bottom: -20px;padding-left:0px;"><!-- [et_pb_line_break_holder] --><label class="control-label sr-only" for="s-lg-guide-search">Guide Search Terms</label><!-- [et_pb_line_break_holder] --><input class="s-lg-form-control" name="q" id="s-lg-guide-search" type="text" placeholder="Find Databases by Name or Subject" style="background: #FFFFFF;display:flex; flex-grow:1; min-height: 50px;"><!-- [et_pb_line_break_holder] --><button class="s-lg-btn-api-drop btn btn-default" type="submit" style="display:flex; flex-grow:0; margin-left: 5px; height:50px;">Search</button><!-- [et_pb_line_break_holder] --></form><!-- [et_pb_line_break_holder] --><!-- [et_pb_line_break_holder] --><p style="text-align: center; margin-top:10px; margin-bottom: -20px; padding-bottom:0px;"><a id="AtoZDatabasesLink" href="https://libguides.mines.edu/az.php">Browse All Databases</a></p><!-- [et_pb_line_break_holder] --><!-- [et_pb_line_break_holder] --></div>
+
+
+
+
+/* --- Prospector - 2962 --- */
+
+<h3>Search Prospector</h3>
+
+<form method="get" action="https://encore.coalliance.org/iii/encore/Home,$Search.form.sdirect" name="form" id="form">    <input name="formids" value="target" type="hidden"> <input name="lang" value="eng" type="hidden"> <input name="suite" value="def" type="hidden"> <input name="reservedids" value="lang,suite" type="hidden"> <input name="submitmode" value="" type="hidden"> <input name="submitname" value="" type="hidden"> 
+
+<div><input name="target" value="" id="target" size="20" type="text" placeholder="REQUEST ITEMS FROM THE REGION'S LIBRARIES" style="background-color:#ffffff;"></div>
+
+<div>
+<input type="submit" value="Search"/></div></form>
+
+<div><p style="text-align:center;"><i class="fa fa-search-plus"></i><a href="https://encore.coalliance.org/iii/encore/home?lang=eng&suite=def&advancedSearch=true&searchString="><strong>Advanced Search</strong></a></p></div>
+
+/* ---IR (Mountain Scholar) - 1192 --- */
+
+<h3 style="margin-top: 20px; padding-bottom:10px;">Search Institutional Repository</h3>		
+		
+<form id="simple" name="searchIRForm" method="get" target="_self" action="https://mines.primo.exlibrisgroup.com/discovery/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimoIR()" style="display:flex; margin-bottom: 0px;padding-left:0px;padding-bottom:0px;">		
+		
+ <select name="search_field" id="selectIROption"  title="Search within" style="min-height:50px; margin-right: 10px;" >		
+		<option selected="selected" value="any">Everything</option>
+		<option value="title">Title</option>
+		<option value="creator">Author/Creator</option>
+		<option value="sub">Subject</option>
+    </select>		
+		
+		
+<input name="institution" type="hidden" value="01COLSCHL_INST">		
+<input name="vid" type="hidden" value="01COLSCHL_INST:MINES">		
+<input name="tab" type="hidden" value="DigitalRepository">		
+<input name="search_scope" type="hidden" value="DigitalRepository">		
+<input name="mode" type="hidden" value="Basic">		
+		
+<input name="displayMode" type="hidden" value="full">		
+<input name="bulkSize" type="hidden" value="10">		
+<input name="highlight" type="hidden" value="true">		
+<input name="dum" type="hidden" value="true">		
+<input id="primoQueryIR" name="query" type="hidden">		
+<input name="displayField" type="hidden" value="all">		
+		
+<input type="hidden" name="pcAvailabiltyMode" value="true">		
+<input type="text" id="primoQueryIRTemp" value="" size="35" style="background: #FFFFFF;display:flex; flex-grow:1; min-height: 50px;margin-bottom:20px;" placeholder="Find Photos, Maps, and More">		
+<!-- Search Button -->		
+<input id="go" title="Search" onclick="document.getElementById('primoQueryIR').value = document.getElementById('selectIROption').value.replace(/[,]/g, ' ')+',contains,' + document.getElementById('primoQueryIRTemp').value.replace(/[,]/g, ' ');" type="submit" value="Search" alt="Search" style="height: 40px; font-size: 14px; font-weight: bold; background: #D2492A; overflow: hidden; margin-left: 0px; display:flex; flex-grow:0; min-height: 50px; margin-left: 5px; padding-right:25px;">		
+		
+</form>		
+		
+<p style="text-align: center; margin-bottom: 0px; margin-top:15px; padding-bottom:0px;">		
+<i class="fa fa-search-plus"></i> <a id="advancedSearchLinkComponent" onclick="redirectToAdvancedSearch('https://mines.primo.exlibrisgroup.com/discovery/search?search_scope=DigitalRepository&vid=01COLSCHL_INST:MINES&lang=en&mode=advanced&offset=0'); return false;" updatecomponents="$GenericLink_21@db5f3ee1[HomePage/queryComponent.advancedSearchLinkComponent]" async="true" href="https://mines.primo.exlibrisgroup.com/discovery/search?search_scope=DigitalRepository&vid=01COLSCHL_INST:MINES&lang=en&mode=advanced&offset=0">Advanced Search</a> | <a href="https://mountainscholar.org/handle/11124/20000">Mountain Scholar</a>		
+</p>
+
+
+

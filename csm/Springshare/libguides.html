@@ -1,0 +1,249 @@
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* -- CUSTOM CSS FOR LIBGUIDES -- */
+  /* --- Global ---*/
+  #s-lg-public-skiplink {
+    top: -50px;
+  }
+
+  /* Fonts */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+
+  a {
+    color: #263f6a;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #21314d;
+    letter-spacing: .5px;
+  }
+
+  h1 {
+    text-transform: uppercase;
+  }
+
+  #s-lg-tabs-container .nav-tabs {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .s-lib-box-content p a,
+  .s-lib-box-content li a {
+    text-decoration: underline;
+  }
+
+  .s-lg-icons.pad-left-sm a {
+    text-decoration: none;
+  }
+
+  .s-lib-box .s-lib-box-title {
+    font-size: 16px;
+  }
+
+  /* Fonts - override inline styles */
+  .s-lib-box-content span,
+  .s-lib-box-content p {
+    font-family: 'Open Sans', sans-serif !important;
+    line-height: 1.5 !important;
+    font-size: 1em !important;
+  }
+
+  .s-lib-box-content span.fa {
+    font-family: FontAwesome !important;
+  }
+
+  /* Database lists */
+  .s-lg-link-list-10 li,
+  .s-lg-tn-li {
+    margin-bottom: 30px;
+  }
+
+  .s-lg-link-list-10 img {
+    padding-right: 10px;
+    margin-bottom: 15px;
+  }
+
+  @media only screen and (min-width: 460px) {
+    .s-lg-database-desc {
+      overflow: hidden;
+    }
+  }
+
+  /* Tabs - stack on mobile */
+  @media only screen and (max-width: 768px) {
+    #s-lg-guide-tabs .nav-tabs>li {
+      width: 100%;
+    }
+  }
+
+  /* Footer */
+  .s-lib-footer a {
+    color: #263f6A;
+  }
+
+  /* Profile - email button*/
+  .s-lib-profile-email .label-info {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #21314d;
+    border-radius: 0;
+    border: 1px solid #21314d;
+  }
+
+  .label-info[href]:hover,
+  .label-info[href]:focus {
+    background-color: #ffffff;
+    color: #21314d;
+    border: 1px solid #21314d
+  }
+
+  /* Book a Librarian button */
+  #mysched_31163,
+  #mysched_44625 {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #21314d !important;
+    border-radius: 0 !important;
+    font-weight: 600 !important;
+    border: 1px solid #21314d !important;
+  }
+
+  #mysched_31163:hover,
+  #mysched_44625:hover {
+    background-color: #ffffff !important;
+    color: #21314d !important;
+    border: 1px solid #21314d;
+  }
+
+  /* --- Homepage --- */
+  /* Homepage navigation */
+  .nav .s-lg-index-nav-btn>button {
+    color: #21314D;
+  }
+
+  .nav-pills>li.active>button,
+  .nav-pills>li.active>button:focus,
+  .nav-pills>li.active>button:hover {
+    background-color: #21314d;
+  }
+
+  /* Homepage sidebar buttons */
+  .btn-info {
+    background-color: #fff;
+    border-radius: 0;
+    color: #21314d;
+    border-color: #21314d;
+  }
+
+  .btn-info:hover,
+  .btn-info:focus {
+    background-color: #21314d;
+    color: #fff;
+  }
+
+  /* Hide the Experts */
+  #s-lg-az-experts-div {
+    display: none !important;
+  }
+
+  li#s-lg-profile-subject-btn {
+    display: none;
+  }
+
+  /* Panels */
+  .panel-group a {
+    color: #21314d;
+  }
+
+  /* --- Springshare Header Navigation ---*/
+  .navbar {
+    border-radius: 0;
+    border: none;
+  }
+
+  .mines-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    border-bottom: 2px solid #d2492a;
+  }
+
+  .navbar-brand {
+    height: 70px
+  }
+
+  #lib-logo {
+    height: 100%;
+  }
+
+  .mines-header-nav li a {
+    color: #444 !important;
+  }
+
+  /* Navbar - Change collapse breakpoint */
+  @media (max-width: 800px) {
+    .navbar-header {
+      float: none;
+    }
+
+    .navbar-left,
+    .navbar-right {
+      float: none !important;
+    }
+
+    .navbar-toggle {
+      display: block;
+    }
+
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+      display: none !important;
+    }
+
+    .navbar-nav {
+      float: none !important;
+      margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+      float: none;
+    }
+
+    .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .collapse.in {
+      display: block !important;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .navbar-nav {
+      float: right;
+      padding-top: 10px;
+    }
+  }
+</style>

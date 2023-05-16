@@ -1,0 +1,64 @@
+/* LibWizard Header CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html body {
+  font-weight: 400;
+}
+
+.mines-header {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  border-bottom: 2px solid #d2492a;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  height: 70px;
+  text-align: left !important;
+}
+
+#lib-logo {
+  height: 100%;
+  padding-top: 10px;
+}
+
+.mines-nav {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.mines-nav li {
+  display: inline-flex;
+  padding: 10px;
+}
+
+.mines-nav li a {
+  text-decoration: none;
+  color: #444;
+}
+
+@media screen and (max-width:840px) {
+  .mines-nav {
+    text-align: left;
+    padding-left: 0;
+    font-size: 1em;
+  }
+
+  .logo-container {
+    height: 40px;
+  }
+
+  .mines-nav li {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width:370px) {
+  .mines-nav {
+    font-size: .8em;
+  }
+}

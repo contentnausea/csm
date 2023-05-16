@@ -1,0 +1,303 @@
+
+
+/*Uncomment the follwoing lines to move facets to the left */
+
+/*
+
+prm-search > md-content.md-primoExplore-theme  {
+    display: -webkit-flex; !* Safari *!
+    -webkit-flex-flow: row-reverse wrap; !* Safari 6.1+ *!
+    display: flex;
+    flex-flow: row-reverse wrap;
+
+}
+.flex-gt-md-25.sidebar{
+    webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+}
+
+
+
+.main{
+    webkit-flex: 0 0 65%;
+    flex: 0 0 65%;
+}
+
+.layout-row>.flex-gt-lg-10{
+    webkit-flex: 0 0 16%;
+    flex: 0 0 16%;
+    max-width: none;
+}
+
+*/
+
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar{
+    background-color: #fff;
+}
+
+
+/* Replace this
+.animate-search-bar {
+    background-color: #fff;
+    
+}
+*/
+
+/*fix permalink single record view*/
+prm-search-bar {background-color: #fff;}
+
+/*select languege*/
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
+    color:#000;
+}
+
+prm-primary-bg.prm-hue1, prm-search-bar.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar {
+    background-color: #fff;
+}
+
+md-toolbar.dark-toolbar, md-toolbar.md-primoExplore-theme.dark-toolbar, md-toolbar.dark-toolbar:not(.md-menu-toolbar) {
+	background-color: #fff;
+	color: #fff;
+}
+
+prm-search-bar .prm-top-bar-container .search-element .search-input-container{
+	background-color: #fff;
+}
+
+
+
+/* Scope options 
+prm-search-bar .prm-top-bar-container .search-element .search-options {
+        background-color: #DD6C53;
+}
+
+
+prm-search-bar .prm-top-bar-container .search-element .search-options:hover {
+        background-color: #D2492A;
+}
+
+Scope options */
+
+/* Advanced Search Button */
+
+prm-search-bar .search-switch-buttons .switch-to-advanced.md-button {
+	color: #D2492A;
+}
+
+/* Availability Information */
+
+prm-search-result-availability-line .md-button.arrow-link-button .button-content  {
+	color: #21314D;
+}
+
+/* FRBR Link Right Side */
+
+prm-search-result-frbr-line .md-button.arrow-link-button .button-content {
+	color: #21314D;
+}
+
+/* FRBR Link Left Side */
+
+prm-search-result-frbr-line .md-button.arrow-link-button .button-content prm-icon md-icon svg, prm-search-result-frbr-line .md-button.arrow-link-button .button-content .prm-notice {
+    color: #D2492A;
+}
+
+/* View it Link font */
+
+prm-view-online a span {
+  color: #0f7d00;
+}
+
+prm-view-online {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+/*
+prm-view-online a span:hover,
+prm-view-online a span:focus {
+  color: #0f7d00;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+*/
+
+/* Media type font */
+
+prm-brief-result-container .media-content-type, md-menu-content .menu-title {
+	color: #000000;
+}
+
+/* Logo Sizing */
+
+prm-topbar {
+                height: 80px;
+}
+prm-topbar prm-logo {
+                max-width: 500px;
+                min-width: 380px;
+}
+
+
+prm-topbar .md-button {
+    background-color: #fff;
+    color:#000!important;
+}
+
+md-fab-toolbar md-toolbar {
+    background-color: #fff!important;
+    color:#000!important!
+}
+
+.prm-secondary-color, prm-search-bookmark-filter .md-button, prm-topbar .top-nav-bar{
+    color: #000;
+}
+
+/*the color of the loading animation*/
+prm-spinner.half-transparent .diamond{
+    background-color:#000;
+}
+
+/*the color of the landing page content boxes*/
+prm-static[section="homepage"] md-card {
+    background-color: white;
+}
+
+/*size of input field in digitization form*/
+prm-form-field md-input-container {
+	width: 165%;	
+}
+
+/* primo-explore-custom-no-results */
+prm-no-search-result > md-card {
+  display:none;
+}
+
+/* availability statement in full display */
+
+span.availability-status {
+ cursor: pointer;
+}
+
+span.availability-status:hover {
+ text-decoration: underline;
+ background-color: rgba(92,146,189,.1);
+}
+
+/* Browzine styles */
+.browzine-icon  {
+  margin-right:2px;
+}
+
+.browzine-external-link {
+  width:15px;
+  height:15px;
+  min-width:15px;
+  min-height:15px;
+}
+
+/* make the lock always show on facets area */
+prm-facet prm-breadcrumbs div.md-chip-content strong {
+                padding-left: 22px;
+}
+prm-breadcrumbs .md-chips .md-chip-content .persistence-button {
+                opacity: 1;
+                transform: none;
+                padding-left: -2px;
+}
+prm-breadcrumbs .md-chip.persistent-facet strong {
+                padding-left: 0;
+}
+prm-breadcrumbs .md-chip.persistent-facet .md-chip-content .persistence-button {
+                left: -1px;
+}
+
+
+/* altmetrics */
+
+.full-view-section.loc-altmetrics{
+    background-color: #f3f3f3;
+    margin-top:0px;
+    padding-left: 3em;
+}
+
+
+
+/* Analytics Table */
+#apiDataTable { border-collapse: collapse; }
+#apiDataTable th, #apiDataTable td { border:1px solid #ececec; padding:8px; }
+#apiDataTable td { text-align:right; }
+/* Analytics Table */
+
+
+/* --- Color + WCAG - Feb. 2020 --- */
+
+md-content.main._md.md-primoExplore-theme.padded-container.facet-to-left.layout-align-center-start.layout-row.flex, prm-brief-result-container.list-item, .full-view-inner-container.flex {
+  background-color:#ffffff;
+}
+
+/* Alert Bar */
+
+.bar.alert-bar.layout-align-center-center.layout-row {
+  background-color: #E9ECF0;
+  border-color: white;
+}
+
+.button-with-icon.zero-margin.md-button.md-primoExplore-theme.md-ink-ripple {
+  color: #21314d;
+}
+
+
+/* Toolbar */
+prm-search-result-tool-bar .md-toolbar-tools {
+  color: black;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border: 1px solid #E8E8E8;
+}
+
+.tiny-switch.zero-margin.ng-pristine.ng-untouched.ng-valid.md-primoExplore-theme.ng-empty, .h-flipped-25-icon.disabledFavTool, prm-search-result-tool-bar .disableActionTool, prm-search-result-tool-bar .disabledFavTool, prm-search-result-tool-bar .disabledSlideButtonTool {
+  color: #444444;
+}
+
+
+/* --- Search Results ---*/ 
+
+prm-brief-result .item-title span {
+    color:#263f6a;
+}
+
+.availability-status {
+  color: #21314d !important;
+}
+
+/* Icons */
+.result-item-actions .md-icon-button {
+  color: #444444;
+}
+
+.list-item-count {
+  color: #444444;
+}
+
+/* Load More Results link*/
+.md-button.button-confirm {
+  color: #263f6a;
+}
+
+
+/* - Record View - */
+/* Send To icons */
+.md-button.icon-button-with-text, .saved-query-list > md-nav-bar .md-nav-item .md-button, prm-action-list > md-nav-bar .md-nav-item .md-button {
+  color: #444444;
+}
+
+/* Side-nav links*/
+.md-button.button-link, .tiles-grid-tile .tile-content > .md-button, md-grid-tile .tile-content > .md-button {
+  color: #26346a;
+}
+
+   
+
+
